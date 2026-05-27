@@ -9,4 +9,8 @@ Why NODE js -->
 4. unified language
 5. Rich Ecosystem 
 
+How Node js works -->
 
+- Node accept the request from the client and send the response , while working with the request node.js handles them with a single thread .
+- To operate I/O operation/request node js use the concept thread.
+- 
