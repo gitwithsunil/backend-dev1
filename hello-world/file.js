@@ -21,5 +21,5 @@ const fs = require('fs')
 //append data to file
 // fs.appendFileSync('./test.txt', new Date().getDate().toLocaleString())
 
-fs.appendFileSync('./test.txt', 'hello today is 1st day of june')
-
+// fs.appendFileSync('./test.txt', 'hello today is 1st day of june\n')
+// fs.appendFileSync('./test.txt', `${Date.now()} hey there`)
