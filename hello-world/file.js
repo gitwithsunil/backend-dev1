@@ -3,4 +3,6 @@ const fs = require('fs');
 // fs.writeFileSync('./test.txt', 'Hello  World!')
  
 // asynchronous
-fs.writeFile('./test.txt', "hello sunil" , (err) => {})
+// fs.writeFile('./test.txt', "hello sunil" , (err) => {})
+
+    
