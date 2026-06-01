@@ -22,4 +22,7 @@ const fs = require('fs')
 // fs.appendFileSync('./test.txt', new Date().getDate().toLocaleString())
 
 // fs.appendFileSync('./test.txt', 'hello today is 1st day of june\n')
-// fs.appendFileSync('./test.txt', `${Date.now()} hey there`)
+fs.appendFileSync('./test.txt', `${Date.now()} hey there`)// this will add the current timestamp to the file
+fs.cpSync('./test.txt', './copy.txt')// this will copy the content of test.txt to copy.txt
+fs.unlinkSync('./copy.txt')// this will delete the copy.txt file
+
