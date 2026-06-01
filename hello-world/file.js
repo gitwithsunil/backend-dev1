@@ -10,10 +10,13 @@ const fs = require('fs')
 // console.log(result);
 
 //asynchronous
-fs.readFile('./contact.txt', 'utf-8', (err, result) => {  // utf-8 is used to convert buffer data into string
-    if (err) {
-        console.log(err);
-    } else {
-        console.log(result);
-    }
-});
+// fs.readFile('./contact.txt', 'utf-8', (err, result) => {  // utf-8 is used to convert buffer data into string
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log(result);
+//     }
+// });
+
+//append data to file
+fs.appendFileSync('./test.txt', new Date().getDate().toLocaleString())
