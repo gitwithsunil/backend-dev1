@@ -13,4 +13,20 @@ How Node js works -->
 
 - Node accept the request from the client and send the response , while working with the request node.js handles them with a single thread .
 - To operate I/O operation/request node js use the concept thread.
-- 
+
+
+
+
+- get , post , put , patch ,delete
+- GET - retrive data from the server
+- POST - send data to the server
+- PUT - update data on the server
+- PATCH - update part of the data on the server
+- DELETE - delete data from the server 
+
+NODE JS File System :
+
+- the file system module in node js is  a built in API used to perform file & directory related operations on the server.
+- the file system module provides both synchronous and asynchronous methods to work with the file system.
+- the file system module is used to read , write , update , delete files and directories on the server. 
+- imoted using -> const fs = require('fs');
