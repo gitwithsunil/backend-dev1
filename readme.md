@@ -30,3 +30,5 @@ NODE JS File System :
 - the file system module provides both synchronous and asynchronous methods to work with the file system.
 - the file system module is used to read , write , update , delete files and directories on the server. 
 - imoted using -> const fs = require('fs');
+- 
+
