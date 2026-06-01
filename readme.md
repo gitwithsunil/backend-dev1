@@ -28,7 +28,7 @@ NODE JS File System :
 
 - the file system module in node js is  a built in API used to perform file & directory related operations on the server.
 - the file system module provides both synchronous and asynchronous methods to work with the file system.
-- the file system module is used to read , write , update , delete files and directories on the server. 
+- DIRECTORT MANAGEMENT : The file system module is used to read , write , update , delete files and directories on the server. 
 - imoted using -> const fs = require('fs');
 - 
 
