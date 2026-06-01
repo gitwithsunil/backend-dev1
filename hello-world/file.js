@@ -5,5 +5,15 @@ const fs = require('fs')
 // asynchronous
 // fs.writeFile('./test.txt', "hello sunil" , (err) => {})
 
-const result = fs.readFileSync('./contact.txt', 'utf-8');
-console.log(result);
+//synchronous
+// const result = fs.readFileSync('./contact.txt', 'utf-8');
+// console.log(result);
+
+//asynchronous
+fs.readFile('./contact.txt', 'utf-8', (err, result) => {  // utf-8 is used to convert buffer data into string
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(result);
+    }
+});
