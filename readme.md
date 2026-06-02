@@ -58,7 +58,12 @@ Features of the Node js (http module) include:
 4. Streaming: The http module supports streaming data, which is useful for handling large files or real-time data.
 5. HTTPS Support: The https module, which is built on top of the http module, allows you to create secure HTTPS servers using SSL/TLS certificates.
 6. Event-Driven Architecture: The http module is built on Node.js's event-driven architecture, making it efficient and scalable for handling multiple concurrent connections.   
+HEADERS of server: - 
 
+- headers are the metadata of the request, it contains information about the request such as the type of content being sent, the length of the content, the user agent, etc.
+- res.end() is used to end the response and send the data back to the client. It can also be used to send data back to the client. In this case, we are sending a string "Hello from my server" back to the client.
+- myServer.listen(8000, () => console.log("Server is running on port 8000...")) is used to start the server and listen for incoming requests on port 8000. The callback function is executed once the server is successfully started.
+- To test the server, you can open a web browser and navigate to http://localhost:8000. You should see the message "Hello from my server" displayed in the browser. You can also use tools like Postman or curl to send requests to the server and see the responses.   
 
 
 
