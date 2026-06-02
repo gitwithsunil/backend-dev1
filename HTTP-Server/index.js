@@ -1,11 +1,32 @@
 const http = require('http');
+const fs = require('fs');
+
 
 const myServer = http.createServer((req, res) => {
-    // console.log(req.headers) // this will log the headers of the request
-    // console.log(req.url) // this will log the url of the request
-    //console.log("new request received") // this will log a message every time a new request is received
-    console.log("new request received");
-    res.end("Hello from my server again!");
-})
+    const log = `${Date.now()}: ${req.url} New Req Received\n`;
 
-myServer.listen(8000, () => console.log("Server started"))
+    fs.appendFile('log.txt', log, (err) => {
+        if (err) console.error(err);
+    });
+
+    switch (req.url) {
+        case '/':
+            res.end('Hello from my server!');
+            break;
+
+        case '/about':
+            res.end('This is the about page');
+            break;
+
+        case '/contact':
+            res.end('This is the contact page');
+            break;
+
+        default:
+            res.end('Page not found');
+    }
+});
+
+myServer.listen(8000, () => {
+    console.log('Server started on port 8000');
+});
